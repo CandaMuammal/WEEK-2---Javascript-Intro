@@ -1,0 +1,291 @@
+.leftbox1 {
+    width: 720px;
+    height: 190px;
+    /* background-color: lavender; */
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow:1px 1px 1px 1px grey;
+ 
+}
+
+.leftbox1 .open-button{
+    width: 210px;
+    height: 36px;
+    border: 1px solid gray;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 5px;
+    z-index: 3;
+    background-color: white;
+    width: 450px;
+    height: 758px;
+    /* display: none; */
+}
+
+
+
+.modal.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header{
+    padding: 0 25px;
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    align-items: center;
+    border-bottom: 5px solid lightgrey;
+    /* font-size: 24px; */
+    /* border-bottom: 1px solid black; */
+}
+
+.modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal-body {
+    padding: 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.color {
+    width: 100%;
+    padding: 0  10px 25px 10px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 5px solid lightgrey;
+    box-sizing: border-box;
+    /* justify-content: left; */
+    /* justify-content: space-between; */
+
+}
+.color h5 {
+    margin: 15px 0px 40px 0;
+    font-size: 18px;
+}
+
+.color-button {
+    display: flex;
+    flex-direction: row;
+}
+
+#red, #black, #navy, #white, #brown, #darkyellow {
+    height: 45px;
+    width: 45px;
+    border: 1px solid gray;
+    border-radius: 100%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#red {
+    background: #D84242;
+}
+
+#black {
+    background: black;
+}
+
+#navy {
+    background: #151867;
+}
+
+#white {
+    background: white;
+}
+#brown { 
+    background: #BEA9A9;
+}
+#darkyellow {
+    background: #E2BB8D;
+}
+
+.size {
+    width: 100%;
+    padding: 0  10px 25px 10px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 5px solid lightgrey;
+    box-sizing: border-box;
+    /* justify-content: left; */
+    /* justify-content: space-between; */
+
+}
+.size h5 {
+    margin: 15px 0px 40px 0;
+    
+    font-size: 18px;
+}
+
+.size-button {
+    display: flex;
+    flex-direction: row;
+}
+
+#xs, #s, #m, #l, #xl {
+    height: 45px;
+    width: 45px;
+    background: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    color: black;
+}
+
+.category {
+    width: 100%;
+    padding: 0  10px 25px 10px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 5px solid lightgrey;
+    box-sizing: border-box;
+    
+
+    /* justify-content: left; */
+    /* justify-content: space-between; */
+
+}
+.category h5 {
+    margin: 15px 0px 40px 0;
+
+    font-size: 18px;
+}
+
+.category-button {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 20px 0 0;
+    flex-wrap: wrap;
+}
+
+#all, #woman, #man, #boy, #girl {
+    
+    height: 40px;
+    width: 100px;
+
+    background: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: black;
+}
+
+.brand {
+    width: 100%;
+    padding: 0  10px 25px 10px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 5px solid lightgrey;
+    box-sizing: border-box;
+    
+
+    /* justify-content: left; */
+    /* justify-content: space-between; */
+
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+
+}
+.brand h5 {
+    margin: 15px 0px 2px 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+.brand h6 {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    color: gray;
+}
+
+.dropdown{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    padding-top: 20px;
+}
+
+.dropdown button {
+    background: white;
+    border: none;
+    cursor: pointer;
+}
+
+.modal-footer {
+    padding: 0px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 25px;
+}
+
+
+#discard {
+    width: 200px;
+    height: 40px;
+    border-radius: 30px;
+    border: 1px solid gray;
+    background: white;
+}
+
+#apply {
+    width: 200px;
+    height: 40px;
+    border-radius: 30px;
+    border: 1px solid gray;
+    background: #DB3022;
+}
+
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}

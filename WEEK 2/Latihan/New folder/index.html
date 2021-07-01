@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="filter">
+        <button data-modal-target="#modal" class="open-button"><img src="./Assets/filter-logo.png" alt=""></button>
+        <div class="modal active" id="modal">
+            <div class="modal-header">
+                <button data-close-button class="close-button">&times;</button>
+                <h2>Filter</h2>
+            </div>
+            <div class="modal-body">
+                <div class="color">
+                    <h5>Colors</h5>
+                    <div class="color-button">
+                        <button id="black"></button>
+                        <button id="white"></button>
+                        <button id="red"></button>
+                        <button id="brown"></button>
+                        <button id="darkyellow"></button>
+                        <button id="navy"></button>
+                    </div>
+                </div>
+                <div class="size">
+                    <h5>Sizes</h5>
+                    <div class="size-button">
+                        <button id="xs">XS</button>
+                        <button id="s">S</button>
+                        <button id="m">M</button>
+                        <button id="l">L</button>
+                        <button id="xl">XL</button>
+                    </div>
+                </div>
+                <div class="category">
+                    <h5>Categories</h5>
+                    <div class="category-button">
+                        <button id="all">All</button>
+                        <button id="woman">Women</button>
+                        <button id="man">Men</button>
+                        <button id="boy">Boys</button>
+                        <button id="girl">Girls</button>
+
+                    </div>
+                </div>
+                <div class="brand">
+                    <div class="title">
+                        <h5>Brand</h5>
+                        <h6>adidas original, jack and jones</h6>
+                    </div>
+                    <div class="dropdown">
+                        <button><img src="./Assets/dropdown.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="discard">Discard</button>
+                <button id="apply">Apply</button>
+            </div>
+        </div>
+        <div id="overlay"></div>
+    </div>
+
+
+
+</body>
+
+</html>
